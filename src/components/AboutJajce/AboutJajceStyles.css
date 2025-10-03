@@ -9,6 +9,24 @@
 
 .about-container p{
     padding-bottom: 2rem;
+    white-space: pre-line;
+}
+
+.about-content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.about-image {
+  width: 40%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.about-text {
+  flex: 1;
 }
 
 @media screen and (max-width:850px){
