@@ -7,59 +7,49 @@
     font-size: 3rem;
 }
 
-.slider-container {
-    display: flex;
-    align-items: center;
+/* Swiper Container */
+.swiper-container {
+    position: relative;
     margin-top: 2rem;
-    gap: 10px;
+    padding: 0 60px; /* More padding for navigation buttons */
 }
 
-.slider-wrapper {
-    overflow: hidden;
-    flex: 1;
-    margin: 0 10px;
-    
+/* Card wrapper for consistent sizing */
+.card-wrapper {
+    height: 100%;
 }
 
-.slider {
-    display: flex;
-    gap: 20px;
-    transition: transform 0.5s ease-in-out;
-    padding: 0 10px;
-    background-color: #fff;
-}
-
-.slide-btn {
-    background: #2a2a2a;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    font-size: 1.5rem;
-    border-radius: 5px;
-    flex-shrink: 0;
-}
-
-
+/* Card styles with consistent dimensions */
 .t-card {
-    min-width: 32%;
     text-align: start;
     box-shadow: 0 5px 25px 2px rgba(0, 0, 0, 0.11);
     border-radius: 7px;
     cursor: pointer;
     padding: 1rem 0.8rem;
     background-color: rgb(244, 247, 243);
+    height: 450px; /* Fixed height for all cards */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 5px -5px;
+}
+
+.t-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
 .t-image {
     height: 200px;
     overflow: hidden;
     border-radius: 7px;
+    flex-shrink: 0; /* Prevent image container from shrinking */
 }
 
 .t-image img {
     width: 100%;
     height: 100%;
+    object-fit: cover; /* Ensure images maintain aspect ratio */
     transition: 0.3s ease-in-out;
     border-radius: 7px;
 }
@@ -71,11 +61,183 @@
 .t-card h4 {
     font-size: 1.3rem;
     padding: 0.9rem 0 0.3rem 0;
+    margin: 0;
+    flex-shrink: 0; /* Prevent heading from shrinking */
 }
 
-@media screen and (max-width: 850px){
+.t-card p {
+    margin: 0;
+    flex: 1; /* Allow text to take remaining space */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Limit text to 4 lines */
+    -webkit-box-orient: vertical;
+    line-height: 1.4;
+}
+
+/* Swiper Slide */
+.swiper-slide {
+    height: auto; /* Let the content determine height */
+    display: flex;
+}
+
+/* Swiper Pagination */
+.swiper-pagination {
+    position: relative;
+    margin-top: 40px; /* More space above pagination */
+    margin-bottom: 20px;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #ccc;
+    opacity: 0.7;
+    margin: 0 6px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #2a2a2a;
+    opacity: 1;
+}
+
+/* Swiper Navigation - Fixed positioning */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #2a2a2a;
+    background: rgba(255, 255, 255, 0.95);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border: 2px solid #f0f0f0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 0;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: white;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-50%) scale(1.05);
+}
+
+/* Swiper Info */
+.swiper-info {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #666;
+    font-weight: 500;
+    padding: 8px 16px;
+    background: rgba(244, 247, 243, 0.8);
+    border-radius: 20px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Container for swiper info to center it */
+.swiper-container::after {
+    content: '';
+    display: table;
+    clear: both;
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+    .swiper-container {
+        padding: 0 50px;
+    }
+    
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .swiper-container {
+        padding: 0 40px;
+    }
+    
     .t-card {
-        flex: 0 0 90%;
-        margin: 0 auto;
+        height: 420px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .swiper-container {
+        padding: 0 35px;
+    }
+    
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 16px;
+    }
+    
+    .swiper-button-next {
+        right: 5px;
+    }
+    
+    .swiper-button-prev {
+        left: 5px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .trip {
+        margin: 4rem 2rem 6rem 2rem;
+    }
+    
+    .swiper-container {
+        padding: 0 30px;
+    }
+    
+    .t-card {
+        height: 400px;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .swiper-container {
+        padding: 0 25px;
+    }
+    
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 35px;
+        height: 35px;
+        display: none; /* Hide on very small screens */
     }
 }

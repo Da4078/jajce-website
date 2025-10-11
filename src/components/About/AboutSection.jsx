@@ -1,4 +1,4 @@
-import "./AboutJajceStyles.css";
+import "./AboutStyles.css";
 
 function AboutSection({ 
   title, 

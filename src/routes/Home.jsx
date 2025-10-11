@@ -16,7 +16,7 @@ function Home (){
                 text="Legende stare, ljepote nove, Jajce te čeka, u srcu i snove."
                 buttonText="Istraži Jajce"
                 url="/discover"
-                btnClass="show"
+                btnClass="show"              
             />
             <Destination/>
             <Trip/>

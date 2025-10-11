@@ -1,63 +1,78 @@
-.footer{
-    padding: 4rem 6rem;
-    background-color: #000;
-    color: #fff;
-    
+.footer {
+    background-color: #2a2a2a;
+    padding: 1.5rem 0;
+    margin-top: auto;
 }
 
-.top{
-    display: flex;
-    align-items: center;
-    text-align: start;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.top i{
-    color:#fff;
-    font-size: 2rem;
-    margin-left: 1rem;
-}
-
-.top i:hover{
-    color: #01959a;
-}
-
-.bottom{
-    padding-top: 2rem;
-    text-align: start;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.bottom div{
+.footer-content {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
-.bottom h4{
-    font-size: 1.2rem;
-    padding: 1rem 0 0.8rem 0;
+.footer-text p {
+    color: #fff;
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    text-align: center;
 }
 
-.bottom a{
-    text-decoration: none;
-    color: #fafafa;
-    padding-bottom: 0.4rem;
-    font-size: 1.1rem;
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
 }
 
-@media screen and (max-width:850px){
-    .footer{
-        padding: 4rem 2rem;
+.social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 1rem 0;
     }
-
-    .footer i{
-        margin: 1rem 1rem 0 0;
+    
+    .footer-content {
+        padding: 0 1rem;
+        gap: 0.8rem;
     }
+    
+    .social-icons {
+        gap: 1.2rem;
+    }
+    
+    .social-icons a {
+        font-size: 1.4rem;
+    }
+}
 
-    .bottom div{
-        width: 50%;
+@media screen and (max-width: 480px) {
+    .footer-content {
+        padding: 0 0.5rem;
+    }
+    
+    .social-icons {
+        gap: 1rem;
+    }
+    
+    .social-icons a {
+        font-size: 1.3rem;
+    }
+    
+    .footer-text p {
+        font-size: 0.8rem;
     }
 }

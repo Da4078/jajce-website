@@ -2,7 +2,7 @@ import Hero from '../components/Hero/Hero'
 import Navbar from '../components/NavigationBar/Navbar'
 import AboutImg from "../assets/katakombe.jpg"
 import Footer from "../components/Footer/Footer"
-import AboutJajce from '../components/AboutJajce/AboutJajce'
+import AboutJajce from '../components/About/AboutJajce'
 
 function About (){
     return(

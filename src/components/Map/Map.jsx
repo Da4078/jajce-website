@@ -30,7 +30,13 @@ function Map(){
         }, {
             geocode: [44.3441, 17.2080],
             popUp: "Veliko Plivsko jezero"
-        }, {
+        },
+        {
+            geocode: [44.3480, 17.2414],
+            popUp: "Kupalište Brana"
+        },
+        
+        {
             geocode: [44.3413, 17.2738],
             popUp: "Franjevački muzej"
         },  {
@@ -73,9 +79,17 @@ function Map(){
     };
 
      return (
-        <div className="map-flex-container">
+        <div className="map-container-vertical">
+            <div className="map-text">
+                <p>
+                    Ovdje možete vidjeti najvažnije znamenitosti Jajca na karti. <br/>
+                    Kliknite na markere kako biste saznali više informacija. <br/>
+                    Planirajte svoj posjet i istražite prirodne i kulturne ljepote ovog jedinstvenog grada!
+                </p>
+            </div>
+
             <div className="t-card map-card">
-                <div className="map-container">
+                <div className="map-wrapper">
                     <MapContainer center={[44.3396, 17.2712]} zoom={13}>
                         <TileLayer
                             attribution='&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -91,16 +105,9 @@ function Map(){
                     </MapContainer>
                 </div>
             </div>
-
-            <div className="map-text">
-                <p>
-                    Ovdje možete vidjeti najvažnije znamenitosti Jajca na karti. <br/>
-                    Kliknite na markere kako biste saznali više informacija. <br/>
-                    Planirajte svoj posjet i istražite prirodne i kulturne ljepote ovog jedinstvenog grada!
-                </p>
-            </div>
         </div>
     );
 }
+
 
 export default Map
