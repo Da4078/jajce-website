@@ -45,13 +45,6 @@ img{
     margin-bottom: 1rem;
 }
 
-.hero-text p{
-    font-size: 1.5rem;
-    color: #fff;
-    padding: 0.5rem 0 2rem 0;
-    margin: 0;
-}
-
 .hero-text .show{
     text-decoration: none;
     background-color: #fff;

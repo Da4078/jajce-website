@@ -2,7 +2,7 @@
 import Avnoj from "../../assets/avnoj.jpg";
 import CrkvaMarija from "../../assets/crkva-sv-marije.jpg";
 import Dzamija from "../../assets/dzamija.jpg";
-import EtnoZbirka from "../../assets/etno-zbirka.jpg";
+import EthnoZbirka from "../../assets/etno-zbirka.jpg";
 import Grb from "../../assets/Hrvoje_Vukcic_Grb.jpg";
 import Katakombe from "../../assets/katakombe-2.jpg";
 import Jezera from "../../assets/jezera-2.avif";
@@ -54,7 +54,7 @@ export const aboutPages = {
       "Zavičajna etno zbirka formirana je 2010. godine. Ona prikazuje tradiciju, način i običaje jajačkog života. Ovdje možete vidjeti predmete i dokumente muzičke tradicije sa područja Jajca. Osnovu izloženih predmeta sa vjerskim knjigama i narodnom nošnjom čini balkansko kulturno naslijeđe slavenske umjetničke tradicije. Zbirka sadrži zaista vrijedne i reprezentativne primjerke osobnih predmeta i nošnje jajačkog kraja: katolička, pravoslavna i islamska. Centralni prostor čini posuđe od metala i gline koje se koristilo za pripremanje i čuvanje namirnica, jela i napitaka. Na ovom dijelu možemo vidjeti primjer ručnog bosanskog ćilima napravljenog od vune. Također u ovom dijelu možemo vidjeti različite predmete praktične namjene koji su korišteni u domaćinstvu, zanatstvu i poljoprivredi.",
       "U centralnoj prostoriji nalazi se i tkalački stan – ručna mašina za tkanje. Dio etno zbirke je i bosanska gradska soba koja je nastala na prijelazu 19. i 20. stoljeća. Tu se susrećemo sa kulturom stanovanja i uređenja interijera kod gradskog stanovništva tog vremena."
     ],
-    image: EtnoZbirka,
+    image: EthnoZbirka,
     layout: "image-right"
   },
   "povijest": {

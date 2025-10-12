@@ -63,7 +63,7 @@ function AboutJajce() {
       ]
     },
     {
-      title: "Austro-Ugarska uprava (1878.-1918.)",
+      title: "Austro-Ugarska monarhija (1878.-1918.)",
       image: AustroHungarianRule,
       layout: "left",
       content: [

@@ -13,7 +13,6 @@ function Home (){
                 cName="hero"
                 heroImg={JajceImg}
                 title="Grad Starih Priča i Nevjerojatne Ljepote"
-                text="Legende stare, ljepote nove, Jajce te čeka, u srcu i snove."
                 buttonText="Istraži Jajce"
                 url="/discover"
                 btnClass="show"              
