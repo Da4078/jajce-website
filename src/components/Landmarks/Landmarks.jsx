@@ -14,7 +14,7 @@ import MithraTemple from "../../assets/mitra.jpg";
 import AvnojMuseum from "../../assets/avnoj.jpg";
 import FranciscanMuseum from "../../assets/muzej.jpg";
 import LoveBridge from "../../assets/most.jpg";
-import Watermills from "../../assets/mlincici-2.jpg";
+import Watermills from "../../assets/mlincici-1.jpg";
 import PlivaLakes from "../../assets/jezera.jpg";
 import MikiCottage from "../../assets/vikendica.jpg";
 import BearTower from "../../assets/medvjed-kula.jpg";
