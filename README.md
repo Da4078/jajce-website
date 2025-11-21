@@ -32,4 +32,4 @@ npm run dev
 ```
 
 ## Live Demo
-Check out the live version of the Jajce Website here: [Jajce Website Live](https://jajce-website.vercel.ap
+Check out the live version of the Jajce Website here: [Jajce Website Live](https://jajce-website.vercel.app
