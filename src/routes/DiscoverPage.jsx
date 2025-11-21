@@ -20,7 +20,7 @@ import OmerbegHouse from "../assets/Omerbegova-kuca-Jajce-2.webp";
 import Mosque from "../assets/dzamija-2.jpg";
 import EthnoCollection from "../assets/etno-zbirka-2.webp";
 import Dam from "../assets/dam.jpg"
-import DefaultImg from "../assets/mlincici-2.jpg";
+import DefaultImg from "../assets/mlincici-3.jpg";
 
 const heroImages = {
   "plivska-jezera": PlivaLakes,

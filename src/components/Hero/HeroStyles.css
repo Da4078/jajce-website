@@ -53,7 +53,13 @@ img{
     font-size: 1.1rem;
     font-weight: bold;
     letter-spacing: 2px;
-    color: #222;   
+    color: #222;
+    transition: 0.3s ease; 
+}
+
+.hero-text .show:hover {
+    background-color: #01959a;
+    color: #fff;                
 }
 
 .hero-text .hide{

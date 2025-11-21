@@ -1,6 +1,6 @@
 import "./TripStyles.css"
 import CardData from "../Card/CardData"
-import Mlincici from "../../assets/mlincici-2.jpg"
+import Mlincici from "../../assets/mlincici-3.jpg"
 import Jezera from "../../assets/jezera.jpg"
 import Vikendica from "../../assets/vikendica.jpg"
 import { useNavigate } from "react-router-dom"
