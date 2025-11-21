@@ -30,3 +30,6 @@ npm install react@^18.3.1 react-dom@^18.3.1 react-router-dom@^6.30.1 react-i18ne
   ```bash
 npm run dev
 ```
+
+## Live Demo
+Check out the live version of the Jajce Website here: [Jajce Website Live](https://jajce-website.vercel.ap
