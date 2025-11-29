@@ -4,7 +4,8 @@ function AboutSection({
   title, 
   content, 
   image, 
-  layout = "image-left"
+  layout = "image-left",
+  extraImages = []
 }) {
   return (
     <div className={`about-container ${layout}`}>
@@ -26,6 +27,13 @@ function AboutSection({
           <img src={image} alt={title} className="about-image" />
         )}
       </div>
+       {extraImages.length > 0 && (
+        <div className="extra-images">
+          {extraImages.map((img, i) => (
+            <img key={i} src={img} alt={`${title} dodatna ${i+1}`} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }

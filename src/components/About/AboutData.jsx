@@ -13,7 +13,10 @@ import Muzej from "../../assets/muzej.jpg";
 import OmerbegovaKuca from "../../assets/omerbegova-kuca.jpg";
 import SvIvo from "../../assets/sv-ivo.jpg";
 import Vikendica from "../../assets/vikendica-2.jpg";
-import Dam from "../../assets/dam.webp"
+import Dam from "../../assets/dam.webp";
+import Jezero1 from "../../assets/jezera-3.jpg";
+import Jezero2 from "../../assets/jezera-4.jpg";
+import Jezero3 from "../../assets/jezera-5.jpg";
 
 export const aboutPages = {
   "muzej-avnoja": {
@@ -73,10 +76,13 @@ export const aboutPages = {
     content: [
       "Plivska jezera su dva prekrasna jezera koja se nalaze na rijeci Plivi, nedaleko od grada Jajca u Bosni i Hercegovini. Ova jezera su nastala prirodno i predstavljaju najveću prirodnu akumulaciju u zemlji. Plivska jezera su idealno mjesto za odmor i uživanje u netaknutoj prirodi, miru i tišini. Osim toga, ova jezera nude i brojne mogućnosti za rekreaciju, sport i zabavu.",
       "Na Plivskim jezerima možete se baviti raznim vodenim sportovima, kao što su veslanje, kajak, kanu ili ribolov. Također, možete se prošetati ili voziti biciklom uz obalu jezera, koja je uređena i opremljena klupama i stolovima za piknik.",
-      "Plivska jezera su također odlična destinacija za one koji traže smještaj u prirodi. U blizini jezera možete pronaći razne vrste smještaja, od hotela i vikendica do kampova i apartmana. Smještaj je prilagođen svim ukusima i potrebama gostiju, a cijene su vrlo pristupačne. Uz to, možete uživati u ukusnoj domaćoj hrani i piću, koja se nudi u restoranima i kafićima uz jezera."
+      "Plivska jezera su također odlična destinacija za one koji traže smještaj u prirodi. U blizini jezera možete pronaći razne vrste smještaja, od hotela i vikendica do kampova i apartmana. Smještaj je prilagođen svim ukusima i potrebama gostiju, a cijene su vrlo pristupačne. Uz to, možete uživati u ukusnoj domaćoj hrani i piću, koja se nudi u restoranima i kafićima uz jezera.",
+      "Veliko plivsko jezero nalazi se na nadmorskoj visini od 425 metara. Dugo je 3.300 metara, a njegova širina iznosi približno jedan kilometar, dok je maksimalna dubina jezera 36 metara. Donje ili malo jezero je površinski manje, dužine je oko jedan kilometar i širine oko 430 metara, a maksimalna dubina jezera je 36 metara.",
+      "Odlukom Komisije za nacionalne spomenike Bosne i Hercegovine ovo područje je proglašeno Nacionalnim spomenikom pod nazivom “Kulturni krajolik – Plivska jezera sa kompleksom mlinоva na Plivi kod Jajca”."
     ],
     image: Jezera,
-    layout: "image-left"
+    layout: "image-left",
+    extraImages: [Jezero1, Jezero2, Jezero3] 
   },
   "medvjed-kula": {
     heroTitle:"Medvjed Kula",
@@ -155,7 +161,7 @@ export const aboutPages = {
   },
   "vikendica": {
     heroTitle:"Mikijeva vikendica",
-    title: "Mikijeva Vikendica",
+    title: "Mikijeva vikendica",
     content: [
       "Mikijeva vikendica smještena je u mirnom okruženju prirode, neposredno uz Plivsko jezero, nedaleko od Jajca, i predstavlja savršeno mjesto za bijeg od svakodnevnice. Ovdje možete uživati u tišini, zelenilu i čistom zraku, a istovremeno ste dovoljno blizu grada i njegovih znamenitosti. Blizina Plivskog jezera omogućava vam da provedete vrijeme u opuštanju na obali, ribolovu ili vožnji čamcem, dok okolna priroda pruža brojne staze za šetnju, biciklizam i planinarenje. Mikijeva vikendica idealna je za odmor s obitelji ili prijateljima, ali i za aktivan boravak u prirodi, nudeći savršen spoj mira i rekreativnih aktivnosti."
     ],

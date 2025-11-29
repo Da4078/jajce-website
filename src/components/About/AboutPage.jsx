@@ -17,6 +17,7 @@ function AboutPage() {
       content={pageData.content}
       image={pageData.image}
       layout={pageData.layout}
+      extraImages={pageData.extraImages}
     />
   );
 }
