@@ -17,6 +17,8 @@ import Dam from "../../assets/dam.webp";
 import Jezero1 from "../../assets/jezera-3.jpg";
 import Jezero2 from "../../assets/jezera-4.jpg";
 import Jezero3 from "../../assets/jezera-5.jpg";
+import Jezero4 from "../../assets/jezera-6.webp";
+import Jezero5 from "../../assets/jezera-7.jpg";
 
 export const aboutPages = {
   "muzej-avnoja": {
@@ -82,7 +84,7 @@ export const aboutPages = {
     ],
     image: Jezera,
     layout: "image-left",
-    extraImages: [Jezero1, Jezero2, Jezero3] 
+    extraImages: [Jezero1, Jezero2, Jezero3, Jezero4, Jezero5] 
   },
   "medvjed-kula": {
     heroTitle:"Medvjed Kula",
